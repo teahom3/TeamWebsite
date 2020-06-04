@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html lang="en-NZ">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Stakeholders">
+		<meta name="description" content="stakeholders page">
+		<meta name="author" content="Team Bossman">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CSS/Index.css">
+		<title>Home</title>
+	</head>
+	
+	<body>
+		<!---loading image--->
+		<div class="loader">
+			<img src="images/gun.gif" alt="Loading..."/>
+		</div>
+	
+		<!---Navbar from w3schools--->
+		<div class="topnav" id="myTopnav">
+			<a href="Index.html" class="active">Intro</a> 
+			<div class="dropdown">
+				<button class="dropbtn">Start Of Team Project<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="Stakeholders.html">Stakeholders</a>
+					<a href="KeyRoles.html">Key Roles</a>
+					<a href="PersonalProfile.html">Personal Profile</a>
+					<a href="ProjectCharter.html">Project Charter</a>
+					<a href="Milestones.html">Milestones</a>
+					<a href="WorkLoad.html">Workload</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn">Team planning<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="TeamBrainstorming.html">Team Brainstorming Ideas</a>
+					<a href="RecourcesNeeds.html">Recources Needs</a>
+					<a href="ProductRoadmap.html">Product Roadmap</a>
+					<a href="Persona.html">Persona</a>
+					<a href="UserStory.html">User Story</a>
+				</div>
+			</div> 
+			<a href="WeeklyTeamMeetings.html">Weekly Team Meetings</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		
+		
+		<h1>Welcome</h1>
+		
+		<br>
+		<h2>this website will diplay our documentaion</h2>
+		
+		<!---footer--->
+		<footer>
+		<p>Posted by: Bossman nation</p>
+		</footer>
+
+		<!---loading screen--->
+		<script type = "text/javascript">
+			window.addEventListener("load", function () {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // class "loader hidden"
+			});
+		</script>
+	
+		<!---navbar button--->
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+			x.className += " responsive";
+			} else {
+			x.className = "topnav";
+			}}
+		</script>
+	</body>
+	
+	
+</html>
